@@ -6,6 +6,13 @@ export const GlobalStyle = createGlobalStyle`
 /* Reset box-model and set borders */
 /* ============================================ */
 
+:root {
+  --primary: #141628;
+  --secondary: #1B1E32;
+  --pink: #FD4370;
+  --w-desktop: 1440px;
+}
+
 *,
 ::before,
 ::after {
