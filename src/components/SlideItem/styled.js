@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
       padding: 24px;
 
       h1 {
+        width: 100%;
         font-size: 30px;
         color: grey;
         font-weight: 500;

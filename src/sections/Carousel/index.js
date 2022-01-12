@@ -17,36 +17,32 @@ const Carousel = () => {
   const content = [
     {
       id: 1,
-      title: "Vulputate Mollis Ultricies Fermentum Parturient",
+      title: "Afrianska",
       description:
-        "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
+        "A landing page project with three different pages, so react routes were used to develop it.",
       button: "Github",
-      link: "https://www.github.com",
+      link: "https://github.com/luanastephany/afrianska-landing-page",
       image: "https://i.imgur.com/ZXBtVw7.jpg",
-      user: "Luan Gjokaj",
-      userProfile: "https://i.imgur.com/JSW6mEk.png",
     },
 
     {
       id: 2,
-      title: "Tortor Dapibus Commodo Aenean Quam",
+      title: "Short Links",
       description:
-        "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
+        "After entering the original link and a custom name, a new shortened link will be generated.",
       button: "Github",
+      link: "https://github.com/luanastephany/encurtador",
       image: "https://i.imgur.com/DCdBXcq.jpg",
-      user: "Erich Behrens",
-      userProfile: "https://i.imgur.com/0Clfnu7.png",
     },
 
     {
       id: 3,
-      title: "Vulputate Mollis Ultricies Fermentum Parturient",
+      title: "Bookstore",
       description:
-        "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
+        "Project made to have the experience of using Strapi to develop an API with the books, their authors, cover and rank.",
       button: "Github",
+      link: "https://github.com/luanastephany/bookstore",
       image: "https://i.imgur.com/ZXBtVw7.jpg",
-      user: "Luan Gjokaj",
-      userProfile: "https://i.imgur.com/JSW6mEk.png",
     },
   ];
 
