@@ -1,19 +1,27 @@
 import React from "react";
-import Slider from "react-animated-slider";
-import "react-animated-slider/build/horizontal.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import SlideItem from "../../components/SlideItem";
 import { SlideButtonWrapper } from "./styled";
 
-const SlideButton = ({ isLeft }) => {
+const SlideButtonLeft = (clickHandler) => {
   return (
-    <SlideButtonWrapper>
-      {isLeft ? <FaArrowLeft /> : <FaArrowRight />}
+    <SlideButtonWrapper onClick={clickHandler}>
+      <FaArrowLeft />
     </SlideButtonWrapper>
   );
 };
 
-const Carousel = () => {
+const SlideButtonRight = (clickHandler) => {
+  return (
+    <SlideButtonWrapper onClick={clickHandler}>
+      <FaArrowRight />
+    </SlideButtonWrapper>
+  );
+};
+
+const CarouselItem = () => {
   const content = [
     {
       id: 1,
@@ -47,19 +55,20 @@ const Carousel = () => {
   ];
 
   return (
-    <Slider
+    <Carousel
       className="slider-wrapper"
       infinite={true}
-      previousButton={<SlideButton isLeft />}
-      nextButton={<SlideButton />}
+      ariaLabel
+      renderArrowPrev={SlideButtonLeft}
+      renderArrowNext={SlideButtonRight}
     >
       {content.map((item) => (
         <div>
           <SlideItem key={item.id} data={item} />
         </div>
       ))}
-    </Slider>
+    </Carousel>
   );
 };
 
-export default Carousel;
+export default CarouselItem;
