@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 420px;
+  padding: 10px 0;
 
   .content {
     display: flex;
@@ -16,17 +17,17 @@ export const Wrapper = styled.div`
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
     img {
-      flex: 1;
+      width: 500px;
       object-fit: cover;
     }
 
     .info {
       display: flex;
       flex-direction: column;
-      flex: 1;
       gap: 16px;
       align-items: flex-end;
       padding: 24px;
+      width: 500px;
 
       h1 {
         width: 100%;
