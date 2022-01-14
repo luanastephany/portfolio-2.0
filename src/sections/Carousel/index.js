@@ -3,19 +3,19 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import SlideItem from "../../components/SlideItem";
-import { SlideButtonWrapper } from "./styled";
+import { SlideButtonWrapper, Wrapper } from "./styled";
 
-const SlideButtonLeft = (clickHandler) => {
+const SlideButtonLeft = ({ onClick }) => {
   return (
-    <SlideButtonWrapper onClick={clickHandler}>
+    <SlideButtonWrapper className="left" onClick={onClick}>
       <FaArrowLeft />
     </SlideButtonWrapper>
   );
 };
 
-const SlideButtonRight = (clickHandler) => {
+const SlideButtonRight = ({ onClick }) => {
   return (
-    <SlideButtonWrapper onClick={clickHandler}>
+    <SlideButtonWrapper className="right" onClick={onClick}>
       <FaArrowRight />
     </SlideButtonWrapper>
   );
@@ -55,19 +55,22 @@ const CarouselItem = () => {
   ];
 
   return (
-    <Carousel
-      className="slider-wrapper"
-      infinite={true}
-      ariaLabel
-      renderArrowPrev={SlideButtonLeft}
-      renderArrowNext={SlideButtonRight}
-    >
-      {content.map((item) => (
-        <div>
+    <Wrapper>
+      <Carousel
+        infiniteLoop="true"
+        showStatus={false}
+        renderArrowPrev={(onClickHandler, label) => (
+          <SlideButtonLeft onClick={onClickHandler} />
+        )}
+        renderArrowNext={(onClickHandler, label) => (
+          <SlideButtonRight onClick={onClickHandler} />
+        )}
+      >
+        {content.map((item) => (
           <SlideItem key={item.id} data={item} />
-        </div>
-      ))}
-    </Carousel>
+        ))}
+      </Carousel>
+    </Wrapper>
   );
 };
 
