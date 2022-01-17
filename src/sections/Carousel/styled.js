@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
-  padding: 80px 0;
+  padding: 40px 0;
+  width: 100%;
+  justify-content: center;
 
   .control-dots {
     bottom: 10px;
@@ -23,6 +25,39 @@ export const Wrapper = styled.div`
 
   .right {
     right: 0;
+  }
+`;
+
+export const AboutWork = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+
+  .content {
+    width: var(--width);
+  }
+
+  p {
+    color: var(--pink);
+    opacity: 0.8;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    &::before {
+      content: " ";
+      display: inline-block;
+      width: 60px;
+      height: 6px;
+      background-color: var(--pink);
+      margin: 0 24px 0 0;
+    }
+  }
+
+  h1 {
+    color: #808080;
   }
 `;
 
