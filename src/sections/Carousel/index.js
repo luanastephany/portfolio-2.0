@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import SlideItem from "../../components/SlideItem";
-import { SlideButtonWrapper, Wrapper } from "./styled";
+import { AboutWork, SlideButtonWrapper, Wrapper } from "./styled";
 
 const SlideButtonLeft = ({ onClick }) => {
   return (
@@ -56,6 +56,13 @@ const CarouselItem = () => {
 
   return (
     <Wrapper>
+      <AboutWork>
+        <div className="content">
+          <p>Work</p>
+          <h1>See some of my projects!</h1>
+        </div>
+      </AboutWork>
+
       <Carousel
         infiniteLoop="true"
         showStatus={false}
