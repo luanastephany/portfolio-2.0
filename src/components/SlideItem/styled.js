@@ -11,13 +11,17 @@ export const Wrapper = styled.div`
   .content {
     display: flex;
     height: 100%;
-    width: 1000px;
+    width: var(--width);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
+    img,
+    .info {
+      width: calc(var(--width) / 2);
+    }
+
     img {
-      width: 500px;
       object-fit: cover;
     }
 
@@ -27,7 +31,6 @@ export const Wrapper = styled.div`
       gap: 16px;
       align-items: flex-end;
       padding: 24px;
-      width: 500px;
 
       h1 {
         width: 100%;
