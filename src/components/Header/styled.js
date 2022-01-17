@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1200px;
+    width: var(--width);
 
     img {
       width: 65px;

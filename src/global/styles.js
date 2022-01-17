@@ -7,10 +7,11 @@ export const GlobalStyle = createGlobalStyle`
 /* ============================================ */
 
 :root {
-  --primary: #141628;
+  --primary: #0b0e24;
   --secondary: #1B1E32;
   --pink: #FD4370;
   --w-desktop: 1440px;
+  --width: 1200px;
 }
 
 *,

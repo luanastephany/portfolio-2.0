@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   width: 100%;
-  background-color: #0b0e24;
+  background-color: var(--primary);
   justify-content: center;
 `;
 
@@ -11,7 +11,7 @@ export const HeroMain = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 1200px;
+  width: var(--width);
   background-image: url("/bg.png");
   padding: 150px 0;
   background-repeat: no-repeat;
@@ -31,6 +31,6 @@ export const HeroMain = styled.div`
   }
 
   span {
-    color: #fd4370;
+    color: var(--pink);
   }
 `;
