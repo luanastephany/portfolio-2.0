@@ -12,7 +12,7 @@ const Hero = () => {
         <p>
           I'm a self taught <span>frontend</span> developer
         </p>
-        <Button>See my work</Button>
+        <Button href="https://github.com/luanastephany">See my work</Button>
       </HeroMain>
     </Wrapper>
   );

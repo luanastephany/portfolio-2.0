@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <Wrapper>
       <header>
-        <img src="/logo.png" alt="" />
+        <img src="/logo3.png" alt="" />
 
         <Contact>
           <p>Work</p>

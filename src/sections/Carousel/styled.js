@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
-  padding: 40px 0;
+  padding: 20px 0;
   width: 100%;
   justify-content: center;
 
@@ -31,11 +31,13 @@ export const Wrapper = styled.div`
 export const AboutWork = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
   width: 100%;
 
   .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     width: var(--width);
   }
 
@@ -49,7 +51,7 @@ export const AboutWork = styled.div`
     &::before {
       content: " ";
       display: inline-block;
-      width: 60px;
+      width: 50px;
       height: 6px;
       background-color: var(--pink);
       margin: 0 24px 0 0;
@@ -58,6 +60,7 @@ export const AboutWork = styled.div`
 
   h1 {
     color: #808080;
+    margin-bottom: 8px;
   }
 `;
 
