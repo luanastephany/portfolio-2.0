@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import { GlobalStyle } from "./global/styles";
+import About from "./sections/About";
 import Carousel from "./sections/Carousel";
 import Hero from "./sections/Hero";
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <Carousel />
+      <About />
     </>
   );
 }
