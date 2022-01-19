@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
   background-color: var(--secondary);
   width: 100%;
   height: 90px;
+  position: fixed;
+  z-index: 9999;
 
   header {
     display: flex;

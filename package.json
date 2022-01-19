@@ -12,6 +12,7 @@
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "6",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
     "sass": "^1.45.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"

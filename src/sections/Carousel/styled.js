@@ -52,7 +52,7 @@ export const AboutWork = styled.div`
       content: " ";
       display: inline-block;
       width: 50px;
-      height: 6px;
+      height: 4px;
       background-color: var(--pink);
       margin: 0 24px 0 0;
     }
