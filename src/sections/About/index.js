@@ -1,4 +1,18 @@
 import React from "react";
+import { CgFigma } from "react-icons/cg";
+import {
+  FaCss3Alt,
+  FaGitSquare,
+  FaHtml5,
+  FaReact,
+  FaSass,
+} from "react-icons/fa";
+import {
+  SiAdobephotoshop,
+  SiJavascript,
+  SiNpm,
+  SiTypescript,
+} from "react-icons/si";
 import Button from "../../components/Button/Button";
 import { Wrapper } from "./styled";
 
@@ -21,12 +35,54 @@ const About = () => {
         </div>
 
         <div className="second-content">
-          <h1>Skills</h1>
-          <p>
-            Development: HTML, CSS/SCSS, JavaScript, Typescript, ReactJs,
-            Styled-components, NPM e Git
-          </p>
-          <p>Design: Figma, Photoshop</p>
+          <div className="skills">
+            <h1>Development Skills</h1>
+            <div className="skill">
+              <FaHtml5 size={24} />
+              <span>HTML</span>
+            </div>
+            <div className="skill">
+              <FaCss3Alt size={24} />
+              <span>CSS</span>
+            </div>
+
+            <div className="skill">
+              <SiJavascript size={24} />
+              <span>Javascript</span>
+            </div>
+            <div className="skill">
+              <SiTypescript size={24} />
+              <span>Typescript</span>
+            </div>
+            <div className="skill">
+              <FaReact size={24} />
+              <span>React</span>
+            </div>
+            <div className="skill">
+              <FaGitSquare size={24} />
+              <span>Git</span>
+            </div>
+            <div className="skill">
+              <SiNpm size={24} />
+              <span>NPM</span>
+            </div>
+          </div>
+
+          <div className="skills">
+            <h1>Design Skills</h1>
+            <div className="skill">
+              <FaSass size={24} />
+              <span>Sass</span>
+            </div>
+            <div className="skill">
+              <CgFigma size={24} />
+              <span>Figma</span>
+            </div>
+            <div className="skill">
+              <SiAdobephotoshop size={24} />
+              <span>Photoshop</span>
+            </div>
+          </div>
         </div>
         <Button href="https://www.linkedin.com/in/luana-stephany-aa012b204/">
           Know more

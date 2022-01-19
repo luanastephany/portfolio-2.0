@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-  padding: 20px 0;
+  padding: 40px 0;
 
   .content {
     width: var(--width);
@@ -30,14 +30,15 @@ export const Wrapper = styled.div`
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1.1px;
+    margin-bottom: 20px;
 
     &::before {
       content: " ";
       display: inline-block;
       width: 50px;
-      height: 6px;
+      height: 4px;
       background-color: var(--pink);
-      margin: 0 24px 0 0;
+      margin: 0 24px 3px 0;
     }
   }
 
@@ -51,9 +52,21 @@ export const Wrapper = styled.div`
 
   .second-content {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
     width: var(--width);
     color: #fff;
+
+    .skills {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 16px;
+    }
+
+    .skill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
   }
 `;
