@@ -18,7 +18,7 @@ import { Wrapper } from "./styled";
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <div className="content">
         <div className="first-content">
           <h1>Who I am</h1>

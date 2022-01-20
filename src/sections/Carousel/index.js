@@ -55,7 +55,7 @@ const CarouselItem = () => {
   ];
 
   return (
-    <Wrapper>
+    <Wrapper id="work">
       <AboutWork>
         <div className="content">
           <p>Work</p>

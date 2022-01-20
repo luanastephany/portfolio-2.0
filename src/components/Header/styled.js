@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   background-color: var(--secondary);
   width: 100%;
-  height: 90px;
+  height: 80px;
   position: fixed;
   z-index: 9999;
 
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
     width: var(--width);
 
     img {
-      width: 65px;
+      width: 70px;
       height: 70px;
     }
   }
@@ -29,7 +29,7 @@ export const Contact = styled.div`
   gap: 24px;
   color: #fff;
 
-  p {
+  a {
     opacity: 0.8;
     cursor: pointer;
 

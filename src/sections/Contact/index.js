@@ -3,7 +3,7 @@ import { Wrapper } from "./styled";
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <div className="content">
         <h1>Contact</h1>
         <p className="work">

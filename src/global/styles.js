@@ -35,6 +35,8 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent; /* 3*/
+  scroll-padding-top: 78px;
+  scroll-behavior: smooth;
 }
 
 /* Sections */
@@ -47,6 +49,7 @@ html {
 body {
   margin: 0;  
   font-family: 'Roboto', sans-serif;
+ 
 }
 
 

@@ -8,9 +8,9 @@ const Header = () => {
         <img src="/logo3.png" alt="" />
 
         <Contact>
-          <p>Work</p>
-          <p>About</p>
-          <p>Contact</p>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </Contact>
       </header>
     </Wrapper>
