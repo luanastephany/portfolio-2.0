@@ -14,45 +14,72 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
 
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
-    letter-spacing: 1.1px;
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: 1.1px;
 
-    &::before {
-      content: " ";
-      display: inline-block;
-      width: 50px;
-      height: 4px;
-      background-color: var(--pink);
-      margin: 0 24px 0 0;
+      &::before {
+        content: " ";
+        display: inline-block;
+        width: 50px;
+        height: 4px;
+        background-color: var(--pink);
+        margin: 0 24px 0 0;
+      }
+    }
+    .work {
+      color: #fff;
+      font-size: 36px;
+      font-family: "Poppins", sans-serif;
+      width: 500px;
+      opacity: 0.8;
+      line-height: 20px;
+      letter-spacing: 1.05px;
+    }
+
+    .contact-me {
+      line-height: 24px;
+    }
+
+    p {
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      width: 500px;
+      opacity: 0.8;
+      line-height: 20px;
+      letter-spacing: 1.05px;
+      margin-top: 18px;
+
+      span {
+        color: var(--pink);
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      color: #fff;
+      margin-top: 18px;
+
+      a {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
   }
 
-  .work {
+  .footer {
+    display: flex;
     color: #fff;
-    font-size: 36px;
+    opacity: 0.2;
+    font-size: 14px;
     font-family: "Poppins", sans-serif;
-    width: 500px;
-    opacity: 0.8;
-    line-height: 20px;
-    letter-spacing: 1.05px;
-  }
-
-  p {
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    width: 500px;
-    opacity: 0.8;
-    line-height: 20px;
-    letter-spacing: 1.05px;
-
-    span {
-      color: var(--pink);
-    }
+    margin-top: 24px;
   }
 `;
