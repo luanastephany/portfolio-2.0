@@ -1,4 +1,3 @@
-import React from "react";
 import { CgFigma } from "react-icons/cg";
 import {
   FaCss3Alt,
@@ -9,8 +8,10 @@ import {
 } from "react-icons/fa";
 import {
   SiAdobephotoshop,
+  SiAdobexd,
   SiJavascript,
   SiNpm,
+  SiStyledcomponents,
   SiTypescript,
 } from "react-icons/si";
 import Button from "../../components/Button/Button";
@@ -22,7 +23,7 @@ const About = () => {
       <div className="content">
         <div className="first-content">
           <h1>Who I am</h1>
-          <p>I'm Luana Stephany, 26 years old and I'm from Brazil.</p>
+          <p>I'm Luana Stephany, 26 years old, based in Vancouver, Canada.</p>
           <p>
             Currently going through a career transition from nursing to
             developer. My focus is on frontend applications using React and
@@ -75,6 +76,10 @@ const About = () => {
               <span>Sass</span>
             </div>
             <div className="skill">
+              <SiStyledcomponents size={24} />
+              <span>Styled components</span>
+            </div>
+            <div className="skill">
               <CgFigma size={24} />
               <span>Figma</span>
             </div>
@@ -82,9 +87,13 @@ const About = () => {
               <SiAdobephotoshop size={24} />
               <span>Photoshop</span>
             </div>
+            <div className="skill">
+              <SiAdobexd size={24} />
+              <span>Adobe XD</span>
+            </div>
           </div>
         </div>
-        <Button href="https://www.linkedin.com/in/luana-stephany-aa012b204/">
+        <Button href="https://www.linkedin.com/in/luana-stephany/">
           Know more
         </Button>
       </div>
